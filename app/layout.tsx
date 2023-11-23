@@ -20,7 +20,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className="dark:bg-black">
+      <body className="bg-gradient-to-b from-[#040015] to-[#090E34]">
         <Providers>
           <StarsCanvas />
           <Header />

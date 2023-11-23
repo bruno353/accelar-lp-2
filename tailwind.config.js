@@ -46,6 +46,9 @@ module.exports = {
         one: "0px 2px 3px rgba(7, 7, 77, 0.05)",
         sticky: "inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)",
       },
+      backgroundImage: {
+        'gradient-to-b-black-custom': 'linear-gradient(to bottom, #000000, rgb(9 14 52 / var(--tw-bg-opacity)))',
+      },
     },
   },
   plugins: [],

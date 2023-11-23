@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-      <Hero />
+      <HeroBlackhole />
       <Features />
       <Video />
       <Brands />

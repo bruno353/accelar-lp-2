@@ -19,6 +19,10 @@
     @apply py-5 lg:py-2;
   }
 
+  .bg-gradient-to-b-from-black-to-custom {
+    background-image: linear-gradient(to bottom, #000000, rgb(9 14 52 / var(--tw-bg-opacity)));
+  }
+
   .sticky .menu-scroll.active {
     @apply opacity-70;
   }

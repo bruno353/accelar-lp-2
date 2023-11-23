@@ -12,6 +12,13 @@ const menuData: Menu[] = [
     title: "About",
     path: "/#features",
     newTab: false,
+    onClick: (e) => {
+      e.preventDefault();
+      const section = document.getElementById('features');
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   },
   {
     id: 1,
@@ -22,8 +29,15 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Contact",
-    path: "/about",
+    path: "/#contact",
     newTab: false,
+    onClick: (e) => {
+      e.preventDefault();
+      const section = document.getElementById('contact');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   },
   // {
   //   id: 33,

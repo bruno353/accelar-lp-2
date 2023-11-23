@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24 relative z-20"
+        className="wow fadeInUp bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24 relative z-20"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -21,16 +21,15 @@ const Footer = () => {
                     height={30}
                   />
                   <Image
-                    src="images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
+                  src="/images/logo.svg"
+                  alt="logo"
+                  width={129}
+                  height={29}
+                  className="hidden w-full dark:block"
                   />
                 </Link>
                 <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Building the future of product development
                 </p>
                 <div className="flex items-center">
                   <a
@@ -101,14 +100,15 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      href="https://docs.accelar.io"
+                      target="_blank"
+                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary" rel="noreferrer"
                     >
                       {" "}
-                      Blog{" "}
+                      Docs{" "}
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="/"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
@@ -125,7 +125,7 @@ const Footer = () => {
                       {" "}
                       About{" "}
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -136,7 +136,7 @@ const Footer = () => {
                   Terms
                 </h2>
                 <ul>
-                  <li>
+                  {/* <li>
                     <a
                       href="/"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
@@ -144,7 +144,7 @@ const Footer = () => {
                       {" "}
                       TOS{" "}
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="/"
@@ -160,7 +160,7 @@ const Footer = () => {
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
-                      Refund Policy{" "}
+                      Terms of Use{" "}
                     </a>
                   </li>
                 </ul>
@@ -175,14 +175,14 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                    href="mailto:contact@accelar.io"
+                    className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
-                      Open Support Ticket{" "}
+                      Email{" "}
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="/"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
@@ -199,7 +199,7 @@ const Footer = () => {
                       {" "}
                       About{" "}
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -208,7 +208,7 @@ const Footer = () => {
         <div className="bg-primary/10 py-8">
           <div className="container">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by UIdeck and <a href="https://nextjstemplates.com" rel="nofollow noopener">Next.js Templates</a>
+              © 2024. All Rights Reserved by Accelar
             </p>
           </div>
         </div>

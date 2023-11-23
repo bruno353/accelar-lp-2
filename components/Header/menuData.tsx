@@ -23,8 +23,8 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Docs",
-    path: "/about",
-    newTab: false,
+    path: "https://docs.accelar.io/",
+    newTab: true,
   },
   {
     id: 1,

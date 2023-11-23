@@ -2,41 +2,41 @@ import { Brand } from "@/types/brand";
 import Image from "next/image";
 
 const brandsData: Brand[] = [
-  {
-    id: 1,
-    name: "UIdeck",
-    href: "https://uideck.com",
-    image: "/images/brands/uideck.svg",
-  },
-  {
-    id: 2,
-    name: "Tailgrids",
-    href: "https://tailgrids.com",
-    image: "/images/brands/tailgrids.svg",
-  },
+  // {
+  //   id: 1,
+  //   name: "UIdeck",
+  //   href: "https://uideck.com",
+  //   image: "/images/brands/uideck.svg",
+  // },
+  // {
+  //   id: 2,
+  //   name: "Tailgrids",
+  //   href: "https://tailgrids.com",
+  //   image: "/images/brands/tailgrids.svg",
+  // },
   {
     id: 3,
-    name: "Lineicons",
-    href: "https://lineicons.com",
-    image: "/images/brands/lineicons.svg",
+    name: "Dfinity",
+    href: "https://dfinity.org",
+    image: "/images/brands/dfinity.svg",
   },
-  {
-    id: 4,
-    name: "GrayGrids",
-    href: "https://graygrids.com",
-    image: "/images/brands/graygrids.svg",
-  },
-  {
-    id: 5,
-    name: "TailAdmin",
-    href: "https://tailadmin.com",
-    image: "/images/brands/tailadmin.svg",
-  },
+  // {
+  //   id: 4,
+  //   name: "GrayGrids",
+  //   href: "https://graygrids.com",
+  //   image: "/images/brands/graygrids.svg",
+  // },
+  // {
+  //   id: 5,
+  //   name: "TailAdmin",
+  //   href: "https://tailadmin.com",
+  //   image: "/images/brands/tailadmin.svg",
+  // },
 ];
 
 const Brands = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-16 relative z-20">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -67,7 +67,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className="relative h-24 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
       >
         <Image src={image} alt={name} fill />
       </a>

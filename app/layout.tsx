@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import StarsCanvas from "@/components/Background";
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
 
       <body className="dark:bg-black">
         <Providers>
+          <StarsCanvas />
           <Header />
           {children}
           <Footer />
@@ -32,3 +34,4 @@ export default function RootLayout({
 }
 
 import { Providers } from "./providers";
+

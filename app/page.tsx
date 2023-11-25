@@ -7,7 +7,9 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import HeroBlackhole from "@/components/HeroBlackhole";
+import Plataform from "@/components/Plataform";
 import Pricing from "@/components/Pricing";
+import Skills from "@/components/Skills";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Inter } from "@next/font/google";
@@ -20,7 +22,7 @@ export default function Home() {
       <ScrollUp />
       <HeroBlackhole />
       <Features />
-      <Video />
+      <Skills />
       <Brands />
       <AboutSectionOne />
       <AboutSectionTwo />

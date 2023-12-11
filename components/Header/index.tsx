@@ -151,18 +151,20 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="/signin"
+                <a
+                  href="https://app.accelar.io/signin"
+                  target="_blank"
                   className="rounded-md bg-transparent py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#652ee786] "
                 >
                   Sign In
-                </Link>
-                <Link
-                  href="/signup"
+                </a>
+                <a
+                  href="https://app.accelar.io/signup"
+                  target="_blank"
                   className="rounded-md bg-transparent py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#652ee786] "
                   >
                   Sign Up
-                </Link>
+                </a>
                 {/* <div>
                   <ThemeToggler />
                 </div> */}

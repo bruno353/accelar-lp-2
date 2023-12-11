@@ -154,6 +154,7 @@ const Header = () => {
                 <a
                   href="https://app.accelar.io/signin"
                   target="_blank"
+                  rel="nofollow noreferrer"
                   className="rounded-md bg-transparent py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#652ee786] "
                 >
                   Sign In
@@ -161,6 +162,7 @@ const Header = () => {
                 <a
                   href="https://app.accelar.io/signup"
                   target="_blank"
+                  rel="nofollow noreferrer"
                   className="rounded-md bg-transparent py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#652ee786] "
                   >
                   Sign Up

@@ -36,14 +36,94 @@ const AboutSectionTwo = () => {
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Non-engineer friendly
+                  LLM workflows
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  From completly noobs to wizards developers, anyone can try it
+                  Create LLM-powered workflows to integrate web2 & web3 operations.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+        <div className="-mx-4 flex flex-wrap items-center  mt-[150px]">
+          <div className="w-full px-4 lg:w-1/2">
+              <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
+                <div className="mb-9">
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    Team management
+                  </h3>
+                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  Invite members to the workspace, segregate apps and functionalities.</p>
+                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  Analytics dashboard to have control over your deployments, workflows and node operations.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full px-4 lg:w-1/2">
+              <div
+                className="wow fadeInUp relative mx-auto mb-12 aspect-[32/24] max-w-[500px] text-center lg:m-0"
+                data-wow-delay=".15s"
+              >
+                <Image
+                  src="/images/about/test.png"
+                  alt="about image"
+                  className="rounded-xl"
+                  fill
+                />
+              </div>
+            </div>
+        </div>
+        <div className="w-full items-center  mt-[150px]">
+          <div className="w-full px-4 mb-[20px]">
+              <div className="wow fadeInUp" data-wow-delay=".2s">
+                <div className="mb-9">
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    Deploy and interact with canisters, smart-contracts and protocols.
+                  </h3>
+                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  Interact with blockchain components with a custodial wallet, no need to concerns about private key security and web3 onboarding.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full px-4">
+              <div
+                className="wow fadeInUp relative mx-auto mb-12 aspect-[60/24] text-center lg:m-0"
+                data-wow-delay=".15s"
+              >
+                <Image
+                  src="/images/about/canister.png"
+                  alt="about image"
+                  className="rounded-xl"
+                  fill
+                />
+              </div>
+            </div>
+        </div>
+        <div className="-mx-4 flex flex-wrap items-center  mt-[150px]">
+          <div className="w-full px-4 lg:w-1/2">
+              <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
+                <div className="mb-9">
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                  Create wallets and instances in seconds with just a few steps
+                                    </h3>
+                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  Send transactions, interact with protocols and connect integrations with off-chain triggers.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full px-4 lg:w-1/2">
+              <div
+                className="wow fadeInUp relative mx-auto mb-12 aspect-[34/24] max-w-[500px] text-center lg:m-0"
+                data-wow-delay=".15s"
+              >
+                <Image
+                  src="/images/about/wallet.png"
+                  alt="about image"
+                  className="rounded-xl"
+                  fill
+                />
+              </div>
+            </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28 relative z-20">
-      <div className="container">
+      <div className="container 3xl:max-w-[1400px] xl:max-w-[1100px]">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div
@@ -72,6 +72,35 @@ const AboutSectionTwo = () => {
                 />
               </div>
             </div>
+        </div>         
+                <div className="w-full items-center  mt-[150px]">
+          <div className="w-full px-4 mb-[20px]">
+              <div className="wow fadeInUp" data-wow-delay=".2s">
+                <div className="mb-9">
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    Develop smart-contracts with a fully integrated Soroban IDE.
+                  </h3>
+                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  Either using Accelar wallet provider or Freighter wallet; compile, deploy and interact with Soroban smart-contracts.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full px-4">
+              <div
+                className="wow fadeInUp relative mx-auto mb-12 aspect-[60/24] text-center lg:m-0"
+                data-wow-delay=".15s"
+              >
+                 <video
+                  loop
+                  muted
+                  autoPlay
+                  playsInline
+                  preload="false"
+                  className="w-full h-auto rounded-xl"
+                  src="/ide.webm/"
+                />
+              </div>
+            </div>
         </div>
         <div className="w-full items-center  mt-[150px]">
           <div className="w-full px-4 mb-[20px]">
@@ -117,7 +146,7 @@ const AboutSectionTwo = () => {
                 data-wow-delay=".15s"
               >
                 <Image
-                  src="/images/about/wallet.png"
+                  src="/images/about/wallet2.png"
                   alt="about image"
                   className="rounded-xl"
                   fill

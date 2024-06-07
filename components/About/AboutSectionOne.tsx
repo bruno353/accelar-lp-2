@@ -19,12 +19,12 @@ const AboutSectionOne = () => {
 
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28 relative z-20">
-      <div className="container">
+      <div className="container 3xl:max-w-[1400px] xl:max-w-[1100px]">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="A complete ecosystem to take your ideas from concept to reality."
+                title="A complete ecosystem to take your ideas from concept to reality"
                 paragraph=" Our platform makes it easy to implement robust infrastructures, allowing you to focus on what really matters - creating incredible products. Deploy effortlessly on both back-end and front-end and keep your team in sync."
                 mb="44px"
               />

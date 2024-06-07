@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-20 overflow-hidden pt-[245px] pb-16 md:pt-[260px] md:pb-[120px] xl:pt-[313px] xl:pb-[160px] 2xl:pt-[365px] 2xl:pb-[200px]"
+        className="relative z-20 overflow-hidden pt-[155px] pb-16 xl:pt-[200px] xl:pb-[60px] 2xl:pt-[305px] 2xl:pb-[100px] 3xl:pt-[365px] 3xl:pb-[200px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -15,7 +15,7 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Accelarate your product development ship
+                Accelarate your product development ship in Web3
                 </h1>
                 <p className="mb-12 text-base font-normal !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                 Accelar is a unified product development infrastructure. Develop, collaborate, launch and manage efficiently - all integrated.

@@ -7,9 +7,9 @@ const Features = () => {
     <>
       <section
         id="features"
-        className="bg-transparent relative z-20 py-16 md:py-20 lg:py-28"
+        className="bg-transparent relative z-20 py-16 md:py-20 lg:py-28 lg:pb-14 3xl:py-28"
       >
-        <div className="container">
+        <div className="container max-w-[1200px] 3xl:max-w-[1400px]">
           <SectionTitle
             title="Optimize your product cycle."
             paragraph="From voice-chat features to fullstack hosting. A collaborative environment where your team can exchange ideas and make decisions quickly."

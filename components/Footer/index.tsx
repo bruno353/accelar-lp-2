@@ -100,7 +100,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="https://docs.accelar.io"
+                      href="https://github.com/Accelar-labs"
                       target="_blank"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary" rel="noreferrer"
                     >

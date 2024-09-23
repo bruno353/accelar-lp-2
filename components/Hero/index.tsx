@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { Button } from "../ui/moving-border";
+import { BentoGridDemo } from "./BentoGridDemo";
+import { TypewriterEffectSmoothDemo } from "./TypeWriter";
 
 const Hero = () => {
   return (
@@ -14,20 +17,22 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Accelarate your product development ship in Web3
-                </h1>
-                <p className="mb-12 text-base font-normal !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                Accelar is a unified product development infrastructure. Develop, collaborate, launch and manage efficiently - all integrated.
+                <TypewriterEffectSmoothDemo/>
+                
+                <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base mb-10">
+                  <span className="text-lg">Accelar is a unified automation platform leveraged by AI Agents. </span><br/> Create video summaries, automate browser actions, integrate seamlessly with your favorite tools.
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <a
-                    href="https://app.accelar.io/signup"
+                <div className="mt-10">
+                  <a                     href="https://app.accelar.io/signup"
                     target="_blank"
                     rel="nofollow noreferrer"
-                    className="rounded-md bg-[#7E0AC2] py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#7f0ac263] "
+                  >
+                  <Button
+                    borderRadius="1.75rem"
+                    className="border-neutral-200 dark:border-slate-800"
                   >
                     Start Building
+                    </Button>
                   </a>
                 </div>
               </div>

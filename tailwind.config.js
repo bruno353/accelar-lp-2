@@ -1,9 +1,21 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./lib/**/*.{js,ts,jsx,tsx}",
+    "./ui/**/*.{js,ts,jsx,tsx}",
+    "./utils/**/*.{js,ts,jsx,tsx}",
+    "./lib/utils.ts",
   ],
   darkMode: "class",
   theme: {
@@ -20,6 +32,7 @@ module.exports = {
       primary: "#4A6CF7",
       yellow: "#FBB040",
       "body-color": "#959CB1",
+      ...colors,
     },
     screens: {
       xs: "450px",
@@ -49,7 +62,32 @@ module.exports = {
       backgroundImage: {
         'gradient-to-b-black-custom': 'linear-gradient(to bottom, #000000, rgb(9 14 52 / var(--tw-bg-opacity)))',
       },
+      colors: {
+        current: "currentColor",
+        transparent: "transparent",
+        white: "#FFFFFF",
+        black: "#090E34",
+        dark: "#1D2144",
+        primary: "#4A6CF7",
+        yellow: "#FBB040",
+        "body-color": "#959CB1",
+        ...colors,
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    addVariablesForColors,
+  ],
 };
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}

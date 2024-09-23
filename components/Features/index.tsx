@@ -1,4 +1,5 @@
 import SectionTitle from "../Common/SectionTitle";
+import { ContainerScroll } from "../ui/container-scroll-animation";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 
@@ -9,6 +10,7 @@ const Features = () => {
         id="features"
         className="bg-transparent relative z-20 py-16 md:py-20 lg:py-28 lg:pb-14 3xl:py-28"
       >
+        <ContainerScroll titleComponent={'Yes'} />
         <div className="container max-w-[1200px] 3xl:max-w-[1400px]">
           <SectionTitle
             title="Optimize your product cycle."

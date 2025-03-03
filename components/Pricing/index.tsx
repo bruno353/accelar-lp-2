@@ -3,16 +3,17 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import { BackgroundGradient } from "../ui/background-gradient";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="relative py-16 md:py-20 lg:py-28 z-20">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Find the right plan for you"
+          paragraph="Affordable and straightforward pricing for you."
           center
           width="665px"
         />
@@ -60,46 +61,39 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
-          </PricingBox>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 gap-x-12 gap-y-10 max-w-[900px] md:grid-cols-2 lg:grid-cols-2">
+            <BackgroundGradient className="rounded-[2px] max-w-sm p-1 sm:p-1">
+              <PricingBox
+                packageName="Lite"
+                price={isMonthly ? "10" : "100"}
+                duration={isMonthly ? "mo" : "yr"}
+                subtitle="7 days free trial"
+              >
+                <OfferList text="2 Users per workspace" status="active" />
+                <OfferList text="Get 50,000 tokens per month" status="active" />
+                <OfferList text="Browser automation" status="active" />
+                <OfferList text="Meet recordings" status="active" />
+                <OfferList text="Google drive automation" status="inactive" />
+                <OfferList text="Financial module" status="inactive" />
+              </PricingBox>
+            </BackgroundGradient>
+            <BackgroundGradient className="rounded-[2px] max-w-sm p-1 sm:p-1">
+                <PricingBox
+                packageName="Pro"
+                price={isMonthly ? "20" : "200"}
+                duration={isMonthly ? "mo" : "yr"}
+                subtitle="7 days free trial"
+                >
+                <OfferList text="5 Users per workspace" status="active" />
+                <OfferList text="Get 150,000 tokens per month" status="active" />
+                <OfferList text="Browser automation" status="active" />
+                <OfferList text="Meet recordings" status="active" />
+                <OfferList text="Google drive automation" status="active" />
+                <OfferList text="Financial module" status="active" />
+              </PricingBox>
+            </BackgroundGradient>
+          </div>
         </div>
       </div>
 

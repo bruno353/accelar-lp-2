@@ -36,12 +36,14 @@ export function TypewriterEffectSmoothDemo() {
   ];
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-      setKey((prevKey) => prevKey + 1); // Incrementa a key para forçar o re-render
-    }, 5000); // Aumentado para 7 segundos para dar tempo de completar a animação
-
-    return () => clearInterval(interval);
+    if (phrases.length) {
+      const interval = setInterval(() => {
+        setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+        setKey((prevKey) => prevKey + 1); // Incrementa a key para forçar o re-render
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+    // Aumentado para 7 segundos para dar tempo de completar a animação
   }, []);
 
   return (

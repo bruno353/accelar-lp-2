@@ -31,7 +31,7 @@ const Hero = () => {
                     borderRadius="1.75rem"
                     className="border-neutral-200 dark:border-slate-800"
                   >
-                    Start Building
+                    Start Now
                     </Button>
                   </a>
                 </div>

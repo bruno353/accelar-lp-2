@@ -22,6 +22,19 @@ const menuData: Menu[] = [
   },
   {
     id: 1,
+    title: "Pricing",
+    path: "/#pricing",
+    newTab: false,
+    onClick: (e) => {
+      e.preventDefault();
+      const section = document.getElementById('pricing');
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  },
+  {
+    id: 1,
     title: "Docs",
     path: "https://github.com/Accelar-labs",
     newTab: true,

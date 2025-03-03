@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Compare } from "../ui/compare";
 
 const AboutSectionTwo = () => {
   return (
@@ -6,40 +7,40 @@ const AboutSectionTwo = () => {
       <div className="container 3xl:max-w-[1400px] xl:max-w-[1100px]">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/about/about-image-2.svg"
-                alt="about image"
-                fill
-              />
-            </div>
+
+                <div className="p-4 border rounded-3xl dark:bg-neutral-900 bg-neutral-100  border-neutral-200 dark:border-neutral-800 px-4">
+                <Compare
+                  firstImage="https://assets.aceternity.com/code-solution.png"
+                  secondImage="/images/n.png"
+                  firstImageClassName="object-cover object-left-top"
+                  secondImageClassname="object-cover object-left-top"
+                  className="w-[200px] md:w-full"
+                  slideMode="hover"
+                />
+              </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Blockchain nodes
+                  Browser automations
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                 Efficiently deploy blockchain nodes in a no-code manner, establishing your own decentralized data connections with cost-effective providers.                </p>
+                 Efficiently create no-code browser automations, reduce manual work and save time.</p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  App templates
+                  No more complex python scripts for simple tasks.
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Pre-made smart-contracts, canisters, web backends, web frontends... choose a template and ship in minutes
-                </p>
-              </div>
+                  Eliminate the need to write complex code for automations, Accelar AI agents handle it.                 </p>
+               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  LLM workflows
+                  Agnostic integrations
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Create LLM-powered workflows to integrate web2 & web3 operations.
+                  With our Chrome extension, automate ANY website workflow, point and click..
                 </p>
               </div>
             </div>

@@ -31,9 +31,9 @@ const brandsData: Brand[] = [
   {
     id: 5,
     name: "Crossfi",
-    href: "https://crossfi.org/",
+    href: "https://crossfi.org",
     image: "/images/brands/crossfi.svg",
-    dinamicHeight: '80'
+    dinamicHeight: '40'
   },
   // {
   //   id: 4,
@@ -74,7 +74,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className={`relative h-${dinamicHeight} w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100`}
+        className={`relative h-${dinamicHeight} w-full`}
       >
         <Image src={image} alt={name} fill />
       </a>

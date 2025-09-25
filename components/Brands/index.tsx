@@ -19,12 +19,21 @@ const brandsData: Brand[] = [
     name: "Dfinity",
     href: "https://dfinity.org",
     image: "/images/brands/dfinity.svg",
+    dinamicHeight: '20'
   },
   {
     id: 4,
     name: "Soroban",
     href: "https://stellar.org/soroban",
     image: "/images/brands/stellar.svg",
+    dinamicHeight: '16'
+  },
+  {
+    id: 5,
+    name: "Crossfi",
+    href: "https://crossfi.org/",
+    image: "/images/brands/crossfi.svg",
+    dinamicHeight: '80'
   },
   // {
   //   id: 4,
@@ -42,20 +51,12 @@ const brandsData: Brand[] = [
 
 const Brands = () => {
   return (
-    <section className="3xl:pt-8 relative z-20">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md bg-transparent py-8 px-8   sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[70px]"
-              data-wow-delay=".1s
-              "
-            >
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
-            </div>
-          </div>
+    <section className="py-5">
+      <div className="container max-w-4xl mx-auto px-4">
+        <div className="flex items-center justify-center gap-4 md:gap-4">
+          {brandsData.map((brand) => (
+            <SingleBrand key={brand.id} brand={brand} />
+          ))}
         </div>
       </div>
     </section>
@@ -65,7 +66,7 @@ const Brands = () => {
 export default Brands;
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, image, name } = brand;
+  const { href, image, name, dinamicHeight } = brand;
 
   return (
     <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
@@ -73,7 +74,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-20 3xl:h-24 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className={`relative h-${dinamicHeight} w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100`}
       >
         <Image src={image} alt={name} fill />
       </a>

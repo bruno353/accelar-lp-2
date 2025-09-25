@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
-import StarsCanvas from "@/components/Background";
 
 export default function RootLayout({
   children,
@@ -20,9 +19,8 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className="bg-gradient-to-b from-[#040015] to-[#090E34]">
+      <body className="bg-[#F8F8F0]">
         <Providers>
-          <StarsCanvas />
           <Header />
           {children}
           <Footer />

@@ -8,31 +8,24 @@ export function TypewriterEffectSmoothDemo() {
 
   const phrases = [
     [
-      { text: "Build" },
-      { text: "awesome" },
-      { text: "automations" },
-      { text: "with" },
-      { text: "Accelar.", className: "text-blue-500 dark:text-blue-500" },
+      { text: "Enterprise" },
+      { text: "blockchain" },
+      { text: "infrastructure" },
+      { text: "and" },
+      { text: "AI", className: "text-black" },
     ],
     [
-      { text: "Accelerate" },
-      { text: "your" },
-      { text: "productivity" },
-      { text: "journey.", className: "text-green-500 dark:text-green-500" },
+      { text: "DeFi" },
+      { text: "bridges" },
+      { text: "and" },
+      { text: "tokenization.", className: "text-black" },
     ],
     [
-      { text: "Automate" },
-      { text: "efficiently" },
-      { text: "boring" },
-      { text: "tasks.", className: "text-purple-500 dark:text-purple-500" },
+      { text: "Advanced" },
+      { text: "AI" },
+      { text: "analytics" },
+      { text: "solutions.", className: "text-black" },
     ],
-    [
-        { text: "Create" },
-        { text: "powerfull" },
-        { text: "browser" },
-        { text: "summaries.", className: "text-yellow-500 dark:text-yellow-500" },
-      ],
-    // Adicione mais frases conforme necessário
   ];
 
   useEffect(() => {

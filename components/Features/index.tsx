@@ -1,36 +1,83 @@
-import SectionTitle from "../Common/SectionTitle";
-import { ContainerScroll } from "../ui/container-scroll-animation";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
-import Image from "next/image";
-import { Cover } from "@/components/ui/cover";
 
 const Features = () => {
   return (
     <>
       <section
         id="features"
-        className="bg-transparent relative z-20 py-16 md:py-20 lg:py-10 lg:pb-14 3xl:py-28"
+        className="relative py-20 md:py-32"
       >
-        <ContainerScroll titleComponent={<div className="text-4xl font-bold mb-7">Unleash the power of <br /> <p className="text-7xl">AI collaboration</p></div>}>
-            <Image
-                src="/images/app.webp"
-                alt="about-image"
-                fill
-                className="rounded-xl max-w-[95%] max-h-[90%] mx-auto my-auto"
-              />
-        </ContainerScroll>
-        <div className="container max-w-[1200px] 3xl:max-w-[1400px]">
-          <div className="flex justify-center text-7xl font-bold">
-            <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text">
-              Build AI automations <br /> at <Cover>accelar speed</Cover>
-            </h1>
+        <div className="container max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-light text-black mb-6">
+              Our Expertise
+            </h2>
+            <p className="text-lg text-black font-light max-w-2xl mx-auto">
+              We specialize in cutting-edge blockchain infrastructure and artificial intelligence solutions.
+            </p>
           </div>
-          <div className="grid mt-12 grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuresData.map((feature) => (
               <SingleFeature key={feature.id} feature={feature} />
             ))}
           </div>
+        </div>
+
+        {/* Elementos decorativos geométricos */}
+        <div>
+          <span className="absolute left-0 top-1/4 z-[-1]">
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 120 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="60"
+                cy="60"
+                r="40"
+                fill="#000000"
+                fillOpacity="0.02"
+              />
+              <circle
+                cx="60"
+                cy="60"
+                r="20"
+                fill="#000000"
+                fillOpacity="0.03"
+              />
+            </svg>
+          </span>
+          <span className="absolute right-10 bottom-10 z-[-1]">
+            <svg
+              width="140"
+              height="100"
+              viewBox="0 0 160 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="20"
+                y="20"
+                width="50"
+                height="50"
+                rx="4"
+                fill="#000000"
+                fillOpacity="0.025"
+              />
+              <rect
+                x="90"
+                y="50"
+                width="30"
+                height="30"
+                rx="2"
+                fill="#000000"
+                fillOpacity="0.03"
+              />
+            </svg>
+          </span>
         </div>
       </section>
     </>

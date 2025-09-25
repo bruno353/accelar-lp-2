@@ -1,82 +1,42 @@
-import NewsLatterBox from "./NewsLatterBox";
-
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28 relative z-20">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div
-              className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s
-              "
+    <section id="contact" className="py-20 md:py-32">
+      <div className="container max-w-4xl mx-auto px-4">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-light text-black mb-8 leading-tight">
+            Get in touch
+          </h2>
+          <p className="text-lg text-black font-light mb-12 max-w-2xl mx-auto">
+            Ready to build the future of software? Let&apos;s discuss your project.
+          </p>
+
+          <div className="space-y-6">
+            <a
+              href="mailto:contact@accelar.io"
+              className="block bg-black text-[#F8F8F0] px-8 py-4 text-base font-light hover:bg-gray-800 transition-colors duration-200 max-w-sm mx-auto"
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Need Help? Open a Ticket
-              </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
-                Our support team will get back to you ASAP via email.
-              </p>
-              <form>
-                <div className="-mx-4 flex flex-wrap">
-                  {/* <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Name
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Enter your name"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Email
-                      </label>
-                      <input
-                        type="email"
-                        placeholder="Enter your email"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full px-4">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="message"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Message
-                      </label>
-                      <textarea
-                        name="message"
-                        rows={5}
-                        placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                      ></textarea>
-                    </div>
-                  </div> */}
-                  <div className="w-full px-4">
-                    <a  href="mailto:contact@accelar.io" className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-                      Submit Ticket
-                    </a>
-                  </div>
-                </div>
-              </form>
+              contact@accelar.io
+            </a>
+
+            <div className="flex justify-center space-x-6 text-sm">
+              <a
+                href="https://github.com/Accelar-labs"
+                target="_blank"
+                rel="noreferrer"
+                className="text-black hover:opacity-70 transition-opacity duration-200"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://twitter.com/accelarlabs"
+                target="_blank"
+                rel="noreferrer"
+                className="text-black hover:opacity-70 transition-opacity duration-200"
+              >
+                Twitter
+              </a>
             </div>
           </div>
-          {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
-          </div> */}
         </div>
       </div>
     </section>

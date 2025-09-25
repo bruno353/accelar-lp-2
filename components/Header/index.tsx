@@ -36,11 +36,11 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo-icon.png"
+                  src="/images/new-logo.svg"
                   alt="logo"
                   width={16}
                   height={16}
-                  className="h-4 w-auto"
+                  className="h-8 w-auto"
                 />
                 <span className="text-xl font-light text-black">
                   Accelar

@@ -36,6 +36,9 @@ const Contact = () => {
                 Twitter
               </a>
             </div>
+            <div>
+             BRUNO LAUREANO DOS SANTOS CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA - CNPJ: 47.237.014/0001-97
+            </div>
           </div>
         </div>
       </div>

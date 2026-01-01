@@ -49,18 +49,18 @@ const Header = () => {
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div></div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              <div className="flex items-center justify-end pr-0 sm:pr-8 lg:pr-0">
                 <a
                   href="https://github.com/Accelar-labs"
                   target="_blank"
                   rel="nofollow noreferrer"
-                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light mr-8"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light mr-3 sm:mr-6 lg:mr-8"
                 >
                   GitHub
                 </a>
                 <a
                   href="#contact"
-                  className="text-black border border-black px-4 py-2 text-sm font-light hover:bg-black hover:text-[#F8F8F0] transition-all duration-200"
+                  className="text-black border border-black px-3 sm:px-4 py-2 text-sm font-light hover:bg-black hover:text-[#F8F8F0] transition-all duration-200"
                 >
                   Contact
                 </a>

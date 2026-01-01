@@ -24,19 +24,19 @@ const Hero = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <a
+                  {/* <a
                     href="#about"
                     className="bg-black text-[#F8F8F0] px-8 py-3 text-sm font-medium hover:bg-gray-800 transition-colors duration-200"
                   >
                     Reach out
-                  </a>
+                  </a> */}
                   <a
-                    href="https://app.accelar.io/signup"
+                    href="#about"
                     target="_blank"
                     rel="nofollow noreferrer"
                     className="text-black border border-black px-8 py-3 text-sm font-light hover:bg-black hover:text-[#F8F8F0] transition-all duration-200"
                   >
-                    Platform Access
+                    Reach out
                   </a>
                 </div>
               </div>

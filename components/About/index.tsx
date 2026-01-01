@@ -10,10 +10,10 @@ const About = () => {
 
         <div className="space-y-8 text-center max-w-3xl mx-auto">
           <p className="text-lg text-black font-light leading-relaxed">
-            We build enterprise-grade blockchain infrastructure and AI solutions for forward-thinking organizations.
+            We build enterprise-grade blockchain infrastructure and Software solutions for forward-thinking organizations.
           </p>
           <p className="text-lg text-black font-light leading-relaxed">
-            Our expertise spans DeFi protocols, MEV optimization, cross-chain bridges, tokenization platforms, and advanced machine learning systems.
+            Our expertise spans DeFi protocols, MEV optimization, cross-chain bridges, tokenization platforms, advanced machine learning systems and mobile apps.
           </p>
           <p className="text-lg text-black font-light leading-relaxed">
             From RWA tokenization to sophisticated data analytics — we deliver the technology that powers the next generation of intelligent assets and AI-driven decision making.

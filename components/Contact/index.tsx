@@ -7,7 +7,7 @@ const Contact = () => {
             Get in touch
           </h2>
           <p className="text-lg text-black font-light mb-12 max-w-2xl mx-auto">
-            Ready to build the future of software? Let&apos;s discuss your project.
+            Need support with one of our products? Ready to build the future of software? Let&apos;s discuss your project.
           </p>
 
           <div className="space-y-6">

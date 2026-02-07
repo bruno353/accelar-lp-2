@@ -4,7 +4,7 @@ const PrivacyPolicyPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Privacy Policy & Terms of Service - Bruno Laureano dos Santos"
+        pageName="Privacy Policy & Terms of Service"
         description="Last updated: January 02, 2026"
       />
 

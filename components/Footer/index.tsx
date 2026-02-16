@@ -14,7 +14,25 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+          <nav className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+            <Link
+              href="/about"
+              className="text-sm text-black hover:opacity-70 transition-opacity duration-200"
+            >
+              About
+            </Link>
+            <Link
+              href="/contact"
+              className="text-sm text-black hover:opacity-70 transition-opacity duration-200"
+            >
+              Contact
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="text-sm text-black hover:opacity-70 transition-opacity duration-200"
+            >
+              Privacy Policy
+            </Link>
             <a
               href="mailto:contact@accelar.io"
               className="text-sm text-black hover:opacity-70 transition-opacity duration-200"
@@ -37,7 +55,7 @@ const Footer = () => {
             >
               Twitter
             </a>
-          </div>
+          </nav>
         </div>
 
         <div className="border-t border-gray-200 mt-8 pt-8 text-center">

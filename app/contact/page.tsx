@@ -5,8 +5,8 @@ const ContactPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Contact Us"
+        description="Get in touch with Accelar to discuss how our enterprise blockchain infrastructure and AI solutions can help your business."
       />
 
       <Contact />

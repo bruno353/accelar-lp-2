@@ -48,7 +48,26 @@ const Header = () => {
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
-              <div></div>
+              <nav className="hidden md:flex items-center space-x-8">
+                <Link
+                  href="/about"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  About
+                </Link>
+                <a
+                  href="/#features"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  Services
+                </a>
+                <Link
+                  href="/contact"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  Contact
+                </Link>
+              </nav>
               <div className="flex items-center justify-end pr-0 sm:pr-8 lg:pr-0">
                 <a
                   href="https://github.com/Accelar-labs"

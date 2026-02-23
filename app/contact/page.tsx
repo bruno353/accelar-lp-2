@@ -6,7 +6,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Us"
-        description="Get in touch with Accelar to discuss how our enterprise blockchain infrastructure and AI solutions can help your business."
+        description="Get in touch with Accelar to discuss how our enterprise software infrastructure and AI solutions can help your business."
       />
 
       <Contact />

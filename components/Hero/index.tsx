@@ -20,7 +20,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="text-lg text-black font-light mb-12 max-w-2xl mx-auto">
-                  Enterprise blockchain solutions and AI-driven apps for the next generation of intelligent assets.
+                  Enterprise solutions and AI-driven apps for the next generation of intelligent assets.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

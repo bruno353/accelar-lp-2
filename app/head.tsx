@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Accelar | Enterprise Blockchain Infrastructure & AI Solutions</title>
+      <title>Accelar | Enterprise Software Infrastructure & AI Solutions</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
@@ -17,11 +17,11 @@ export default function Head() {
       <meta property="og:site_name" content="Accelar" />
       <meta
         property="og:title"
-        content="Accelar | Enterprise Blockchain Infrastructure & AI Solutions"
+        content="Accelar | Enterprise Software Infrastructure & AI Solutions"
       />
       <meta
         property="og:description"
-        content="Accelar builds enterprise-grade blockchain infrastructure and AI-driven software solutions for the next generation of intelligent assets."
+        content="Accelar builds enterprise-grade software infrastructure and AI-driven software solutions for the next generation of intelligent assets."
       />
       <meta property="og:url" content="https://www.accelar.io" />
       <meta property="og:image" content="https://www.accelar.io/images/og-logo.svg" />
@@ -34,7 +34,7 @@ export default function Head() {
       <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:title"
-        content="Accelar | Enterprise Blockchain Infrastructure & AI Solutions"
+        content="Accelar | Enterprise Software Infrastructure & AI Solutions"
       />
       <meta
         name="twitter:description"

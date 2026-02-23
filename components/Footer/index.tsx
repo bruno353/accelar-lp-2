@@ -10,7 +10,7 @@ const Footer = () => {
               Accelar
             </Link>
             <p className="text-sm text-black opacity-60 mt-2">
-              Enterprise blockchain infrastructure and AI solutions
+              Enterprise software infrastructure and AI solutions
             </p>
           </div>
 

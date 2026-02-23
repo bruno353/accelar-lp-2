@@ -4,7 +4,7 @@ export default function Head() {
       <title>Contact Accelar | Get in Touch</title>
       <meta
         name="description"
-        content="Get in touch with Accelar. Contact us to discuss enterprise blockchain infrastructure, AI solutions, and how we can help your business."
+        content="Get in touch with Accelar. Contact us to discuss enterprise software infrastructure, AI solutions, and how we can help your business."
       />
       <link rel="canonical" href="https://www.accelar.io/contact" />
       <link rel="icon" href="/images/new-logo.svg" />
@@ -15,7 +15,7 @@ export default function Head() {
       <meta property="og:title" content="Contact Accelar | Get in Touch" />
       <meta
         property="og:description"
-        content="Get in touch with Accelar. Contact us to discuss enterprise blockchain infrastructure, AI solutions, and how we can help your business."
+        content="Get in touch with Accelar. Contact us to discuss enterprise software infrastructure, AI solutions, and how we can help your business."
       />
       <meta property="og:url" content="https://www.accelar.io/contact" />
       <meta property="og:image" content="https://www.accelar.io/images/og-logo.svg" />
@@ -26,7 +26,7 @@ export default function Head() {
       <meta name="twitter:title" content="Contact Accelar | Get in Touch" />
       <meta
         name="twitter:description"
-        content="Get in touch with Accelar to discuss enterprise blockchain and AI solutions."
+        content="Get in touch with Accelar to discuss enterprise software infrastructure and AI solutions."
       />
       <meta name="twitter:image" content="https://www.accelar.io/images/og-logo.svg" />
       <meta name="twitter:site" content="@accelarlabs" />

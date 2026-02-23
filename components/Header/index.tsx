@@ -49,12 +49,12 @@ const Header = () => {
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <nav className="hidden md:flex items-center space-x-8">
-                <Link
-                  href="/about"
+                <a
+                  href="/#about"
                   className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
                 >
                   About
-                </Link>
+                </a>
                 <a
                   href="/#features"
                   className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"

@@ -4,21 +4,6 @@ export default function Head() {
       <title>Accelar | Enterprise Software Infrastructure & AI Solutions</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-      {/* Google Analytics */}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-8V8ST6GR8N"
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-8V8ST6GR8N', { page_path: window.location.pathname });
-          `,
-        }}
-      />
       <meta
         name="description"
         content="Accelar builds enterprise-grade blockchain infrastructure and AI-driven software solutions for the next generation of intelligent assets."

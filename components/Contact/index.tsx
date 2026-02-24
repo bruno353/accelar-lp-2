@@ -1,40 +1,50 @@
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 md:py-32">
+    <section id="contact" className="pt-28 lg:pt-[150px] pb-20 md:pb-32">
       <div className="container max-w-4xl mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-light text-black mb-8 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-light text-black mb-4 leading-tight">
             Get in touch
-          </h2>
-          <p className="text-lg text-black font-light mb-12 max-w-2xl mx-auto">
+          </h1>
+          <p className="text-lg text-black font-light mb-16 max-w-2xl mx-auto opacity-60">
             Need support with one of our products? Ready to build the future of software? Let&apos;s discuss your project.
           </p>
 
-          <div className="space-y-6">
-            <a
-              href="mailto:contact@accelar.io"
-              className="block bg-black text-[#F8F8F0] px-8 py-4 text-base font-light hover:bg-gray-800 transition-colors duration-200 max-w-sm mx-auto"
-            >
-              contact@accelar.io
-            </a>
+          <div className="space-y-12">
+            <div>
+              <p className="text-sm text-black opacity-40 uppercase tracking-widest mb-4">
+                Email
+              </p>
+              <a
+                href="mailto:contact@accelar.io"
+                className="text-xl md:text-2xl text-black font-light hover:opacity-70 transition-opacity duration-200"
+              >
+                contact@accelar.io
+              </a>
+            </div>
 
-            <div className="flex justify-center space-x-6 text-sm">
-              <a
-                href="https://github.com/Accelar-labs"
-                target="_blank"
-                rel="noreferrer"
-                className="text-black hover:opacity-70 transition-opacity duration-200"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://twitter.com/accelarlabs"
-                target="_blank"
-                rel="noreferrer"
-                className="text-black hover:opacity-70 transition-opacity duration-200"
-              >
-                Twitter
-              </a>
+            <div className="border-t border-gray-200 pt-12">
+              <p className="text-sm text-black opacity-40 uppercase tracking-widest mb-6">
+                Find us
+              </p>
+              <div className="flex justify-center space-x-8">
+                <a
+                  href="https://github.com/Accelar-labs"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://twitter.com/accelarlabs"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  Twitter
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ const About = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="#contact"
+            href="/contact"
             className="bg-black text-[#F8F8F0] px-8 py-3 text-sm font-medium hover:bg-gray-800 transition-colors duration-200"
           >
             Get Started

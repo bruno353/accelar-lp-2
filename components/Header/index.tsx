@@ -62,6 +62,12 @@ const Header = () => {
                   Services
                 </a>
                 <Link
+                  href="/blog"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  Blog
+                </Link>
+                <Link
                   href="/contact"
                   className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
                 >
@@ -77,12 +83,12 @@ const Header = () => {
                 >
                   GitHub
                 </a>
-                <a
-                  href="#contact"
+                <Link
+                  href="/contact"
                   className="text-black border border-black px-3 sm:px-4 py-2 text-sm font-light hover:bg-black hover:text-[#F8F8F0] transition-all duration-200"
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>

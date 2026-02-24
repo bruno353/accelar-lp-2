@@ -42,15 +42,8 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Contact",
-    path: "/#contact",
+    path: "/contact",
     newTab: false,
-    onClick: (e) => {
-      e.preventDefault();
-      const section = document.getElementById('contact');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
   },
   // {
   //   id: 33,

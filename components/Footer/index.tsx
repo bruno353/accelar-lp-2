@@ -16,10 +16,16 @@ const Footer = () => {
 
           <nav className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
             <Link
-              href="/about"
+              href="/#about"
               className="text-sm text-black hover:opacity-70 transition-opacity duration-200"
             >
               About
+            </Link>
+            <Link
+              href="/blog"
+              className="text-sm text-black hover:opacity-70 transition-opacity duration-200"
+            >
+              Blog
             </Link>
             <Link
               href="/contact"

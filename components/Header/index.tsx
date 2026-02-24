@@ -49,29 +49,11 @@ const Header = () => {
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <nav className="hidden md:flex items-center space-x-8">
-                <a
-                  href="/#about"
-                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
-                >
-                  About
-                </a>
-                <a
-                  href="/#features"
-                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
-                >
-                  Services
-                </a>
                 <Link
                   href="/blog"
                   className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
                 >
                   Blog
-                </Link>
-                <Link
-                  href="/contact"
-                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
-                >
-                  Contact
                 </Link>
               </nav>
               <div className="flex items-center justify-end pr-0 sm:pr-8 lg:pr-0">

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { BlogPost, ContentBlock } from "@/lib/posts";
+import NewsletterSignup from "../NewsletterSignup";
 
 function formatDate(dateStr: string): string {
   return new Date(dateStr + "T00:00:00").toLocaleDateString("en-US", {
@@ -184,6 +185,9 @@ export function BlogPostClient({
           <ContentRenderer key={i} block={block} />
         ))}
       </motion.article>
+
+      {/* Newsletter signup */}
+      <NewsletterSignup />
 
       {/* More articles */}
       {otherPosts.length > 0 && (

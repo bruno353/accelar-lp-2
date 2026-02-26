@@ -55,6 +55,12 @@ const Header = () => {
                 >
                   Blog
                 </Link>
+                <Link
+                  href="/#newsletter"
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  Newsletter
+                </Link>
               </nav>
               <div className="flex items-center justify-end pr-0 sm:pr-8 lg:pr-0">
                 <a

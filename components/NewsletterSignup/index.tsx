@@ -42,7 +42,7 @@ export default function NewsletterSignup() {
   }
 
   return (
-    <section className="border-t border-gray-200 py-16 sm:py-20">
+    <section id="newsletter" className="border-t border-gray-200 py-16 sm:py-20">
       <div className="container max-w-6xl mx-auto px-4 text-center">
         <p className="text-xs tracking-[0.2em] uppercase text-black opacity-40 mb-4">
           Weekly letter

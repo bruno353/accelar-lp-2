@@ -4,6 +4,7 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Brands from "@/components/Brands";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <Brands />
       <Contact />
+      <NewsletterSignup />
     </>
   );
 }

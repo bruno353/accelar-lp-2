@@ -1,8 +1,11 @@
 export const GA_MEASUREMENT_ID = "G-8V8ST6GR8N";
 
-export function pageview(url: string) {
+export function pageview(path: string) {
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
-    window.gtag("event", "page_view", { page_path: url });
+    window.gtag("config", GA_MEASUREMENT_ID, {
+      page_path: path,
+      page_location: window.location.origin + path,
+    });
   }
 }
 

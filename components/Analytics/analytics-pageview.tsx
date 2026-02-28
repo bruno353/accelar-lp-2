@@ -29,10 +29,10 @@ export function AnalyticsPageview() {
     });
   }, []);
 
-  // Track page views on route changes
+  // Track page views on route changes (SPA navigation)
   useEffect(() => {
-    if (GA_MEASUREMENT_ID) {
-      pageview(pathname || "/");
+    if (GA_MEASUREMENT_ID && pathname) {
+      pageview(pathname);
     }
   }, [pathname]);
 

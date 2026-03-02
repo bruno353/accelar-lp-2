@@ -126,7 +126,7 @@ const OurApps = () => {
             Our Apps
           </h2>
           <p className="text-lg text-black font-light max-w-2xl mx-auto">
-            AI-powered mobile apps, available on the App Store.
+            Next generation mobile apps, available on the App Store.
           </p>
         </div>
 

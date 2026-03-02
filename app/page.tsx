@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Brands from "@/components/Brands";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import OurApps from "@/components/OurApps";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <Features />
+      <OurApps />
       <Brands />
       <Contact />
       <NewsletterSignup />

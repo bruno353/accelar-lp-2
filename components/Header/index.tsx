@@ -56,6 +56,18 @@ const Header = () => {
                   Blog
                 </Link>
                 <a
+                  href="/#apps"
+                  onClick={(e) => {
+                    if (window.location.pathname === "/") {
+                      e.preventDefault();
+                      document.getElementById("apps")?.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  className="text-black hover:opacity-70 transition-opacity duration-200 text-sm font-light"
+                >
+                  Apps
+                </a>
+                <a
                   href="/#newsletter"
                   onClick={(e) => {
                     if (window.location.pathname === "/") {
